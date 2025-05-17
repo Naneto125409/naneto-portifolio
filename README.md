@@ -30,7 +30,7 @@ Sou um estudante de TI apaixonado por tecnologia, com foco em transformar ideias
 
 ## 🌐 Acesse meu portfólio online:
 
-[🔗 Clique aqui para ver o portfólio ao vivo](https://naneto125409.github.io/portfolio)
+[🔗 Clique aqui para ver o portfólio ao vivo]( https://naneto125409.github.io/naneto-portifolio/)
 
 ---
 
