@@ -1,1 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Naneto Almeida da Silva</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @media (max-width: 600px) {
+            .painel h1 {
+                font-size: 1.8rem;
+            }
+
+            .painel h3,
+            .painel p,
+            .projetos a,
+            footer,
+            header p {
+                font-size: 1rem;
+            }
+
+            .botoes a {
+                display: block;
+                width: 100%;
+                margin: 10px auto;
+            }
+
+            .container,
+            .projetos {
+                padding: 20px;
+                margin: 20px 10px;
+            }
+
+            input {
+                font-size: 1rem;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        canvas {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .painel {
+            background: linear-gradient(to right, #1f2937, #3b3f51);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .painel h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .painel h3 {
+            margin-top: 10px;
+            font-weight: normal;
+            opacity: 0.9;
+        }
+
+        .painel p {
+            max-width: 600px;
+            margin: 20px auto;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .botoes a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background: #90cdf4;
+            color: #1f2937;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .botoes a:hover {
+            background: #bee3f8;
+        }
+
+        .projetos {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .projetos h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .projeto-link {
+            display: block;
+            margin: 10px 0;
+            padding: 12px;
+            background: #e7faff;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #1f2937;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .projeto-link:hover {
+            background: #c3f0ff;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: #e7faff;
+            margin-bottom: 10px;
+            padding: 12px;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            background: #1f2937;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./imagem/foto-naneto.png" alt="Foto de Naneto Almeida da Silva"
+            style="width: 500px; border-radius: 0px; box-shadow: 0 0 10px rgba(0,0,0,0.2); margin-bottom: 10px;">
+    <h1>PORTIFÓLIO</h1>
+        </header>
+
+    <section class="painel">
+        <div class="painel-conteudo">
+            <h1>Naneto Almeida da Silva</h1>
+            <h3>Desenvolvedor Web-Frontend/Backend & Analista de Dados</h3>
+            <p>Naneto Almeida da Silva é um estudante de TI determinado, que está moldando seu caminho com precisão e
+                foco, com o objetivo claro de se tornar analista de dados e desenvolvedor de software. Aos 47 anos, ele
+                é alguém que, mesmo começando do zero, já se destaca pela paixão em aprender e pela capacidade de
+                resolver problemas com lógica afiada. Seu perfil é o de alguém que, com calma e perseverança, vai atrás
+                do conhecimento essencial para alavancar sua carreira no mundo da tecnologia.</p>
+            <p>Sua experiência com Bootstrap e Figma, por exemplo, já o coloca no território das soluções visuais
+                eficientes e acessíveis, e seu trabalho está sempre voltado para tornar as interfaces mais elegantes e
+                funcionais, como a integração de botões flutuantes e carrinhos de compras em suas páginas. Quando se
+                trata de resolver problemas, Naneto é meticuloso e atento aos detalhes, sem abrir mão de uma estética
+                refinada, como no uso do dourado e prata na sua landing page de joias.</p>
+            <p>Além disso, ele é alguém que preza pela autonomia, tanto no aprendizado quanto no trabalho. Prefere
+                desenvolver projetos de maneira solo, embora saiba colaborar de forma assertiva com um time pequeno. No
+                entanto, não hesita em expressar suas dificuldades quando encontra falta de comprometimento nas equipes,
+                buscando sempre um ambiente mais organizado e educado. E apesar de seus desafios, como a comunicação em
+                momentos de pressão, Naneto sabe que cada situação é uma oportunidade para crescer, seja na sua
+                capacidade técnica ou em suas habilidades interpessoais.</p>
+            <p>Em sua jornada, ele é uma mistura de estratégia e sensibilidade, como quem sabe que o desenvolvimento de
+                um software ou uma análise de dados pode transformar não só a sua carreira, mas também a vida das
+                pessoas ao redor. E quando se trata de valores, Naneto também é alguém que não se esquece de cultivar
+                relações e criar experiências memoráveis, como no projeto do Coffee Shop Tia Rosa, que reflete a sua
+                visão de um serviço acolhedor, pensado para o cliente e para a conexão humana.</p>
+            <p><strong>Naneto Almeida da Silva é um exemplo claro de como, com foco e persistência, é possível
+                    transformar um sonho em realidade, enfrentando os desafios de frente e com a visão afiada de um
+                    verdadeiro desenvolvedor de software.<br> by chat gpt</strong></p>
+        </div>
+    </section>
+
+    <section class="painel">
+        <div class="painel-conteudo">
+            <div class="botoes">
+                <a href="#" target="_blank">🌐 GitHub</a>
+                <a href="#" target="_blank">📄 Ver Currículo</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="projetos">
+        <h2>Meus Projetos</h2>
+        <a class="projeto-link" href="#lista-paises">🌍 Painel Interativo de Países</a>
+        <a class="projeto-link" href="#">💎 Landing Page KA Joias</a>
+        <a class="projeto-link" href="https://tia-rosa-coffee-shop.netlify.app/">☕ Coffee Shop Tia Rosa</a>
+        <a class="projeto-link" href="#">📈 Dashboard de Aprendizado</a>
+        <a class="projeto-link" href="https://a-jato-mps.netlify.app" target="_blank">🚀 A Jato MPS</a>
+        <a class="projeto-link" href="#cep">📬 Busca de CEP com Interações Animadas</a>
+    </section>
+    <section>
+    <div class="container">
+        <h2>Projeto: Busca de CEP</h2>
+        <input type="text" id="cep" placeholder="Digite o CEP (ex: 01001000)">
+        <button onclick="buscarCEP()" style="margin-top: 10px; padding: 10px 20px; font-size: 16px;">Buscar</button>
+        <div id="resultadoCEP" class="resultado"
+            style="margin-top: 20px; background: #e0ffe0; padding: 15px; border-radius: 8px;"></div>
+    </div>
+    <img src="./imagem/dashboard.png" alt="Foto de Naneto Almeida da Silva"
+        style="width: 500px; border-radius: 0px; box-shadow: 0 0 10px rgba(0,0,0,0.2); margin-bottom: 10px;">
+    <img src="./imagem/dashboard1.png" alt="Foto de Naneto Almeida da Silva"
+        style="width: 500px; border-radius: 0px; box-shadow: 0 0 10px rgba(0,0,0,0.2); margin-bottom: 10px;">
+
+    <div class="container">
+        <h2>Projeto: Painel Interativo de Países</h2>
+        <input type="text" id="busca" placeholder="Digite o nome de um país...">
+        <ul id="lista-paises"></ul>
+        <canvas id="graficoPopulacao" width="400" height="200"></canvas>
+    </div>
+    </section>
+    <footer>
+        © 2025 Naneto Almeida da Silva – <a href="#" style="color: #90cdf4; text-decoration: none;">GitHub</a>
+    </footer>
+
+    <script>
+        function buscarCEP() {
+            const cep = document.getElementById("cep").value.trim();
+            const resultado = document.getElementById("resultadoCEP");
+
+            resultado.innerHTML = "<em>Buscando...</em>";
+            resultado.style.opacity = 0.5;
+
+            if (cep === "") {
+                resultado.innerHTML = "Por favor, digite um CEP.";
+                resultado.style.opacity = 1;
+                return;
+            }
+
+            fetch(`https://viacep.com.br/ws/${cep}/json/`)
+                .then(res => res.json())
+                .then(data => {
+                    if (data.erro) {
+                        resultado.innerHTML = "CEP não encontrado.";
+                    } else {
+                        resultado.innerHTML = `
+            <strong>Logradouro:</strong> ${data.logradouro}<br>
+            <strong>Bairro:</strong> ${data.bairro}<br>
+            <strong>Cidade:</strong> ${data.localidade}<br>
+            <strong>Estado:</strong> ${data.uf}`;
+                    }
+                    resultado.style.transition = "opacity 0.5s ease";
+                    resultado.style.opacity = 1;
+                })
+                .catch(() => {
+                    resultado.innerHTML = "Erro ao buscar o CEP.";
+                    resultado.style.opacity = 1;
+                });
+        }
+        let todosOsPaises = [];
+
+        fetch("https://restcountries.com/v3.1/all")
+            .then(res => res.json())
+            .then(data => {
+                todosOsPaises = data.sort((a, b) => a.name.common.localeCompare(b.name.common));
+                exibirPaises(todosOsPaises);
+                mostrarGraficoPopulacao(todosOsPaises);
+            });
+
+        function exibirPaises(lista) {
+            const ul = document.getElementById("lista-paises");
+            ul.innerHTML = "";
+            lista.forEach(pais => {
+                const nome = pais.name.common;
+                const capital = pais.capital ? pais.capital[0] : "Sem capital";
+                const li = document.createElement("li");
+                li.innerHTML = `<strong>${nome}</strong> - Capital: ${capital}`;
+                ul.appendChild(li);
+            });
+        }
+
+        document.getElementById("busca").addEventListener("input", function () {
+            const termo = this.value.toLowerCase();
+            const filtrados = todosOsPaises.filter(pais =>
+                pais.name.common.toLowerCase().includes(termo)
+            );
+            exibirPaises(filtrados);
+        });
+
+        function mostrarGraficoPopulacao(dados) {
+            const top10 = [...dados]
+                .filter(p => p.population)
+                .sort((a, b) => b.population - a.population)
+                .slice(0, 10);
+
+            const nomes = top10.map(p => p.name.common);
+            const populacoes = top10.map(p => p.population);
+
+            const ctx = document.getElementById('graficoPopulacao').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: nomes,
+                    datasets: [{
+                        label: 'População',
+                        data: populacoes,
+                        backgroundColor: 'rgba(0, 123, 255, 0.5)',
+                        borderColor: 'rgba(0, 123, 255, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
